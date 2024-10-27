@@ -8,11 +8,220 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.main-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  background: #fff;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #cfcfcf;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #989898;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+}
+
+button[data-start]:enabled {
+  color: #fff;
+  background: #4e75ff;
+  cursor: pointer;
+}
+
+button[data-start]:hover {
+  color: #fff;
+  background: #6c8cff;
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+}
+
+.form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form label {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form input[type='number'] {
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form input[type='number']:hover {
+  border: 1px solid #000000;
+}
+
+.form input[type='number']:active {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  margin-bottom: 20px;
+  width: 360px;
+  height: 70px;
+}
+
+fieldset:hover {
+  border: 1px solid #000000;
+}
+
+legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 0 5px;
+  text-align: left;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  text-align: left;
+}
+
+fieldset input[type='radio'] {
+  margin-right: 14px;
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+button[type='submit'] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+  background: #6c8cff;
+}
